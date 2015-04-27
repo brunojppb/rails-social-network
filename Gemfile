@@ -33,7 +33,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :test do
   gem 'minitest-reporters'
   gem 'mini_backtrace'
-  gem 'guard-minitest'
 end
 
 group :production do
