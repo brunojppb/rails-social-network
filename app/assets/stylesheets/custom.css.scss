@@ -4,6 +4,7 @@
 /* Variables */
 $gray-medium-light: #EAEAEA;
 $gray-light: #777;
+$header-blue: #3498db;
 
 /* General */
 
@@ -47,11 +48,30 @@ p {
 
 
 /* header */
+
+#main-header {
+  background-color: $header-blue;
+  div {
+    nav {
+      ul {
+        li {
+          a {
+            color: white;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
