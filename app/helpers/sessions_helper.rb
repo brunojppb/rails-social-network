@@ -31,6 +31,10 @@ module SessionsHelper
     cookies.delete(:remember_token)
   end
 
+  def current_user?(user)
+    user == current_user
+  end
+
   def current_user
     # Check if the user is logged in using session
     # in the case that he has chosen to not be remembered
