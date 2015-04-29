@@ -9,9 +9,11 @@ class SessionsController < ApplicationController
       #hadle successful login
       log_in user
       params[:session][:remember_me] == '1' ? remember(user) : forget(user)
+      # if the user tried to access a protected page before
+      # redirect him to this page
+      redirect_back_or user
       # rails automatically converts redirect_to user to
       # named route user_url(user)
-      redirect_to user
     else
       # create a error message and display
       flash.now[:danger] = "invalid email/password combination"
