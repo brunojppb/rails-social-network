@@ -14,6 +14,11 @@ gem 'bcrypt'
 
 gem 'bootstrap-sass'
 
+gem 'faker'
+
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
